@@ -23,28 +23,20 @@
 ```bash
 > npm i -g pnpm
 > 9.5.0
->
-> > pnpm create vite
->
-> > pnpm create vite
-> > .../1909c20c1af-b34 | Progress: resolved 1, reused 0, downl.../1909c20c1af-b34 | +1 +
-> > .../1909c20c1af-b34 | Progress: resolved 1, reused 0, downl.../1909c20c1af-b34 | Progress: resolved 1, reused 0, downl.../1909c20c1af-b34 | Progress: resolved 1, reused 0, downl.../1909c20c1af-b34 | Progress: resolved 1, reused 0, downloaded 1, added 1, done
-> > ✔ Project name: … .
-> > ✔ Current directory is not empty. Please choose how to proceed: › Ignore files and continue
-> > ✔ Select a framework: › React
-> > ✔ Select a variant: › TypeScript + SWC
-
-Scaffolding project in /Users/gimjaehyeong/Desktop/jayden/workspace/bms/bms-fe...
-
+> pnpm create vite
+> ✔ Project name: … .
+> ✔ Current directory is not empty. Please choose how to proceed: › Ignore files and continue
+> ✔ Select a framework: › React
+> ✔ Select a variant: › TypeScript + SWC
 > pnpm i
->
 > pnpm dev
 ```
 
 # 스토리북 구축
 
-https://storybook.js.org/docs/get-started/frameworks/react-vite?renderer=react
+[참고-공홈](https://storybook.js.org/docs/get-started/frameworks/react-vite?renderer=react)
 
-npx storybook@latest init
-
-pnpm storybook
+```bash
+> npx storybook@latest init
+> pnpm storybook
+```
