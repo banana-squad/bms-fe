@@ -16,10 +16,11 @@
 - zod 유효성검사
 - Eslint
 
-# pnpm
+# pnpm 으로 리액트앱 구축
 
 빠르고 버그없음
 
+```bash
 > npm i -g pnpm
 > 9.5.0
 >
@@ -37,4 +38,13 @@ Scaffolding project in /Users/gimjaehyeong/Desktop/jayden/workspace/bms/bms-fe..
 
 > pnpm i
 >
-> > pnpm dev
+> pnpm dev
+```
+
+# 스토리북 구축
+
+https://storybook.js.org/docs/get-started/frameworks/react-vite?renderer=react
+
+npx storybook@latest init
+
+pnpm storybook
