@@ -8,7 +8,7 @@
 - vite
 - Storybook
 - Axios
-- Tanstack-Query 쿼리
+- Tanstack-Query  캐싱, 비동기등 ..
 - Tanstack-Router 라우팅
 - zod 유효성검사
 - Eslint
