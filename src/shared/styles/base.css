@@ -1,4 +1,5 @@
 @import url('./dung-geun-mo.font.css');
+@import url('./modal.css');
 
 @tailwind base;
 @tailwind components;
