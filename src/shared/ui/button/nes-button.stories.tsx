@@ -3,7 +3,7 @@ import { NesButton } from '@/shared/ui/button/nes-button';
 import type { StoryObj } from '@storybook/react';
 
 const story = {
-  title: 'shared/button/base-button',
+  title: 'shared/ui/button/nes-button',
   component: NesButton,
   args: {
     variant: 'default',
@@ -28,5 +28,40 @@ type Story = StoryObj<typeof story>;
 export const DefaultButton: Story = {
   args: {
     children: 'Default Button',
+  },
+};
+
+export const PrimaryButton: Story = {
+  args: {
+    variant: 'primary',
+    children: 'Primary Button',
+  },
+};
+
+export const SuccessButton: Story = {
+  args: {
+    variant: 'success',
+    children: 'Success Button',
+  },
+};
+
+export const WarningButton: Story = {
+  args: {
+    variant: 'warning',
+    children: 'Warning Button',
+  },
+};
+
+export const ErrorButton: Story = {
+  args: {
+    variant: 'error',
+    children: 'Error Button',
+  },
+};
+
+export const DisabledButton: Story = {
+  args: {
+    disabled: true,
+    children: 'Disabled Button',
   },
 };
