@@ -1,0 +1,7 @@
+#modal-container {
+  @apply fixed top-0 left-0 z-[1000];
+}
+
+#modal-container:has(dialog):after {
+  @apply content-[''] flex bg-[rgba(0,0,0,0.3)] w-screen h-screen;
+}
