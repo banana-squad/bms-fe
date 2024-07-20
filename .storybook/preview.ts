@@ -1,4 +1,7 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from '@storybook/react';
+import { withQuery } from './decorators/withQuery';
+import 'nes.css/css/nes.min.css';
+import '@/shared/styles/index.css';
 
 const preview: Preview = {
   parameters: {
@@ -9,6 +12,7 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [withQuery],
 };
 
 export default preview;
