@@ -1,10 +1,10 @@
 import type { NesRadioVariants } from '@/shared/ui/radio/nes-button.css';
 import { nesRadioVariants } from '@/shared/ui/radio/nes-button.css';
 import { NesRadioContext } from '@/shared/ui/radio/nes-radio.context';
-import type { FunctionComponent, InputHTMLAttributes, PropsWithChildren } from 'react';
+import type { FunctionComponent, InputHTMLAttributes } from 'react';
 import { useContext } from 'react';
 
-export type NesRadioProps = PropsWithChildren<NesRadioVariants & Omit<InputHTMLAttributes<HTMLInputElement>, 'type'>>;
+export type NesRadioProps = NesRadioVariants & Omit<InputHTMLAttributes<HTMLInputElement>, 'type'>;
 
 export const NesRadio: FunctionComponent<NesRadioProps> = ({ dark, className, children, ...props }) => {
   const radioGroup = useContext(NesRadioContext);

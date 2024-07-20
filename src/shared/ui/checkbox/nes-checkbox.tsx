@@ -1,9 +1,9 @@
 import { NesCheckboxContext } from '@/shared/ui/checkbox/nes-checkbox.context';
 import { type NesCheckboxVariants, nesCheckboxVariants } from '@/shared/ui/checkbox/nes-checkbox.css';
-import type { FunctionComponent, InputHTMLAttributes, PropsWithChildren } from 'react';
+import type { FunctionComponent, InputHTMLAttributes } from 'react';
 import { useContext } from 'react';
 
-type NesCheckboxProps = PropsWithChildren<NesCheckboxVariants & Omit<InputHTMLAttributes<HTMLInputElement>, 'type'>>;
+type NesCheckboxProps = NesCheckboxVariants & Omit<InputHTMLAttributes<HTMLInputElement>, 'type'>;
 
 export const NesCheckbox: FunctionComponent<NesCheckboxProps> = ({ dark, className, children, ...props }) => {
   const checkboxGroup = useContext(NesCheckboxContext);

@@ -1,9 +1,9 @@
-import type { FunctionComponent, PropsWithChildren } from 'react';
+import type { FunctionComponent } from 'react';
 import type { HTMLAttributes } from 'react';
 import type { NesContainerVariants } from '@/shared/ui/container/nes-container.css';
 import { nesContainerVariants } from '@/shared/ui/container/nes-container.css';
 
-type NesContainerProps = PropsWithChildren<HTMLAttributes<HTMLDivElement> & NesContainerVariants>;
+type NesContainerProps = HTMLAttributes<HTMLDivElement> & NesContainerVariants;
 
 export const NesContainer: FunctionComponent<NesContainerProps> = ({ title, dark, centered, rounded, withTitle, className, children, ...props }) => (
   <section {...props} className={nesContainerVariants({ dark, rounded, centered, className, withTitle: Boolean(title) })}>
