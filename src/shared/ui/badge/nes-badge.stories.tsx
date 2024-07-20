@@ -1,4 +1,4 @@
-import { NesIcon } from '@/shared/ui/icon/nes-icon';
+import { NesReactionIcon } from '@/shared/ui/icon/reaction-icon/nes-reaction-icon';
 import React from 'react';
 import { NesBadge } from '@/shared/ui/badge/nes-badge';
 import type { Meta, StoryObj } from '@storybook/react';
@@ -95,7 +95,7 @@ export const IconBadge: Story = {
     children: (
       <>
         <span className="is-warning">
-          <NesIcon type="star" size="small" />
+          <NesReactionIcon type="star" size="small" />
         </span>
         <span className="is-primary">Icon badge</span>
       </>

@@ -1,7 +1,8 @@
+import { NesReactionIconProps } from '@/shared/ui/icon/reaction-icon/nes-reaction-icon';
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
 
-export const nesIconVariants = cva(['nes-icon'], {
+export const nesReactionIconVariants = cva(['nes-icon'], {
   variants: {
     type: {
       heart: 'heart',
@@ -26,4 +27,4 @@ export const nesIconVariants = cva(['nes-icon'], {
   },
 });
 
-export type NesIconVariants = VariantProps<typeof nesIconVariants>;
+export type NesReactionIconVariants = VariantProps<typeof nesReactionIconVariants>;

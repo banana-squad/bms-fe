@@ -1,9 +1,9 @@
-import { NesIcon } from '@/shared/ui/icon/nes-icon';
+import { NesReactionIcon } from '@/shared/ui/icon/reaction-icon/nes-reaction-icon';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const story = {
-  title: 'shared/ui/icon/nes-icon',
-  component: NesIcon,
+  title: 'shared/ui/icon/nes-reaction-icon',
+  component: NesReactionIcon,
   args: {
     size: 'large',
     state: 'full',
@@ -25,13 +25,13 @@ const story = {
       description: '아이콘 상태',
     },
   },
-} satisfies Meta<typeof NesIcon>;
+} satisfies Meta<typeof NesReactionIcon>;
 
 export default story;
 
 type Story = StoryObj<typeof story>;
 
-export const HeartIcon: Story = {
+export const HeartReactionIcon: Story = {
   args: {
     type: 'heart',
     size: 'large',
@@ -39,7 +39,7 @@ export const HeartIcon: Story = {
   },
 };
 
-export const HalfHeartIcon: Story = {
+export const HalfHeartReactionIcon: Story = {
   args: {
     type: 'heart',
     size: 'large',
@@ -47,7 +47,7 @@ export const HalfHeartIcon: Story = {
   },
 };
 
-export const TransparentHeartIcon: Story = {
+export const TransparentHeartReactionIcon: Story = {
   args: {
     type: 'heart',
     size: 'large',
@@ -55,7 +55,7 @@ export const TransparentHeartIcon: Story = {
   },
 };
 
-export const EmptyHeartIcon: Story = {
+export const EmptyHeartReactionIcon: Story = {
   args: {
     type: 'heart',
     size: 'large',
@@ -63,7 +63,7 @@ export const EmptyHeartIcon: Story = {
   },
 };
 
-export const StarIcon: Story = {
+export const StarReactionIcon: Story = {
   args: {
     type: 'star',
     size: 'large',
@@ -71,7 +71,7 @@ export const StarIcon: Story = {
   },
 };
 
-export const HalfStarIcon: Story = {
+export const HalfStarReactionIcon: Story = {
   args: {
     type: 'star',
     size: 'large',
@@ -79,7 +79,7 @@ export const HalfStarIcon: Story = {
   },
 };
 
-export const TransparentStarIcon: Story = {
+export const TransparentStarReactionIcon: Story = {
   args: {
     type: 'star',
     size: 'large',
@@ -87,7 +87,7 @@ export const TransparentStarIcon: Story = {
   },
 };
 
-export const EmptyStarIcon: Story = {
+export const EmptyStarReactionIcon: Story = {
   args: {
     type: 'star',
     size: 'large',
@@ -95,7 +95,7 @@ export const EmptyStarIcon: Story = {
   },
 };
 
-export const LikeIcon: Story = {
+export const LikeReactionIcon: Story = {
   args: {
     type: 'like',
     size: 'large',
@@ -103,7 +103,7 @@ export const LikeIcon: Story = {
   },
 };
 
-export const EmptyLikeIcon: Story = {
+export const EmptyLikeReactionIcon: Story = {
   args: {
     type: 'like',
     size: 'large',
@@ -111,7 +111,7 @@ export const EmptyLikeIcon: Story = {
   },
 };
 
-export const SmallHeartIcon: Story = {
+export const SmallHeartReactionIcon: Story = {
   args: {
     type: 'heart',
     size: 'small',
@@ -119,7 +119,7 @@ export const SmallHeartIcon: Story = {
   },
 };
 
-export const MediumHeartIcon: Story = {
+export const MediumHeartReactionIcon: Story = {
   args: {
     type: 'heart',
     size: 'medium',
