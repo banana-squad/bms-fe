@@ -4,6 +4,6 @@ import type { FunctionComponent, HTMLAttributes } from 'react';
 
 export type NesSocialIconProps = HTMLAttributes<HTMLSpanElement> & NesSocialIconVariants;
 
-export const NesSocialIcon: FunctionComponent<NesSocialIconProps> = ({ type, size, className }) => (
-  <i className={nesSocialIconVariants({ size, type, className })}></i>
+export const NesSocialIcon: FunctionComponent<NesSocialIconProps> = ({ type, size, className, children, ...props }) => (
+  <i {...props} className={nesSocialIconVariants({ type, size, className })}></i>
 );
