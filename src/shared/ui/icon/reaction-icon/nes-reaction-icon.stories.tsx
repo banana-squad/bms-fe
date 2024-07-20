@@ -1,3 +1,4 @@
+import type { NesReactionIconProps } from '@/shared/ui/icon/reaction-icon/nes-reaction-icon';
 import { NesReactionIcon } from '@/shared/ui/icon/reaction-icon/nes-reaction-icon';
 import type { Meta, StoryObj } from '@storybook/react';
 
@@ -11,17 +12,17 @@ const story = {
   argTypes: {
     type: {
       control: 'inline-radio',
-      options: ['heart', 'star', 'like'],
+      options: ['heart', 'star', 'like'] as NesReactionIconProps['type'][],
       description: '아이콘 타입',
     },
     size: {
       control: 'select',
-      options: ['small', 'medium', 'large'],
+      options: ['small', 'medium', 'large'] as NesReactionIconProps['size'][],
       description: '아이콘 크기',
     },
     state: {
       control: 'select',
-      options: ['full', 'half', 'transparent', 'empty'],
+      options: ['full', 'half', 'transparent', 'empty'] as NesReactionIconProps['state'][],
       description: '아이콘 상태',
     },
   },

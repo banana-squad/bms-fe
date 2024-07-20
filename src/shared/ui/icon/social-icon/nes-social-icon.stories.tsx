@@ -1,3 +1,4 @@
+import type { NesSocialIconProps } from '@/shared/ui/icon/social-icon/nes-social-icon';
 import { NesSocialIcon } from '@/shared/ui/icon/social-icon/nes-social-icon';
 import type { Meta, StoryObj } from '@storybook/react';
 
@@ -10,7 +11,7 @@ const story = {
   argTypes: {
     type: {
       control: { type: 'inline-radio' },
-      options: ['twitter', 'facebook', 'instagram', 'github', 'google', 'gmail', 'medium', 'linkedin', 'twitch', 'youtube', 'reddit', 'whatsapp'],
+      options: ['twitter', 'facebook', 'instagram', 'github', 'google', 'gmail', 'medium', 'linkedin', 'twitch', 'youtube', 'reddit', 'whatsapp'] as NesSocialIconProps['type'][],
       description: '소셜 아이콘 타입',
     },
     size: {
