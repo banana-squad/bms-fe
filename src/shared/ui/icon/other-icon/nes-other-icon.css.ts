@@ -7,13 +7,6 @@ export const nesOtherIconVariants = cva(['nes-icon'], {
       close: 'close',
       trophy: 'trophy',
       coin: 'coin',
-      nes: 'nes-logo',
-      nesJp: 'nes-jp-logo',
-      snes: 'snes-logo',
-      snesJp: 'snes-jp-logo',
-      octocat: 'octocat animate',
-      smartphone: 'nes-smartphone',
-      phone: 'nes-phone',
     },
     size: {
       small: 'is-small',
