@@ -19,13 +19,11 @@ export const ModalContainer: FunctionComponent = () => {
   }, []);
 
   return modal.isModal && createPortal(
-    <div>
-      <ModalState.Component
-        resolve={ModalState.resolve}
-        reject={ModalState.reject}
-        {...ModalState.props ?? {}}
-      />
-    </div>,
+    <ModalState.Component
+      {...ModalState.props ?? {}}
+      resolve={ModalState.resolve}
+      reject={ModalState.reject}
+    />,
     document.getElementById(MODAL_ID) as HTMLElement,
   );
 };
