@@ -8,18 +8,18 @@ export type NesInputProps = InputHTMLAttributes<HTMLInputElement> & NesInputVari
   label?: string;
 };
 
-export const NesInput: FunctionComponent<NesInputProps> = ({ id, label, children, variant, inline, disabled, ...props }) => {
+export const NesInput: FunctionComponent<NesInputProps> = ({ label, variant, inline, children, ...props }) => {
   const sequence = useSequence();
-  const inputId = id || sequence;
+  const inputId = props.id || sequence;
 
   return (
     <div className={nesInputWrapperVariants({ inline })}>
       {label && <label htmlFor={inputId}>{label}</label>}
       <input
-        type="text"
+        {...props}
+        type={props.type ?? 'text'}
         id={inputId}
         className={nesInputVariants({ variant })}
-        {...props}
       />
     </div>
   );

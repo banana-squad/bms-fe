@@ -1,9 +1,9 @@
-import type { PropsWithChildren } from 'react';
+import type { LiHTMLAttributes, PropsWithChildren } from 'react';
 
-type NesListItemProps = PropsWithChildren;
+type NesListItemProps = PropsWithChildren<LiHTMLAttributes<HTMLLIElement>>;
 
-export function NesListItem({ children }: NesListItemProps) {
+export function NesListItem({ className, children, ...props }: NesListItemProps) {
   return (
-    <li>{children}</li>
+    <li {...props} className={className}>{children}</li>
   );
 }

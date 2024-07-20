@@ -5,7 +5,7 @@ import { useContext } from 'react';
 
 type NesCheckboxProps = PropsWithChildren<NesCheckboxVariants & Omit<InputHTMLAttributes<HTMLInputElement>, 'type'>>;
 
-export const NesCheckbox: FunctionComponent<NesCheckboxProps> = ({ dark, children, ...props }) => {
+export const NesCheckbox: FunctionComponent<NesCheckboxProps> = ({ dark, className, children, ...props }) => {
   const checkboxGroup = useContext(NesCheckboxContext);
 
   return (
@@ -14,7 +14,7 @@ export const NesCheckbox: FunctionComponent<NesCheckboxProps> = ({ dark, childre
         {...props}
         type="checkbox"
         name={checkboxGroup.name ?? props.name}
-        className={nesCheckboxVariants({ dark: checkboxGroup.dark ?? dark })}
+        className={nesCheckboxVariants({ dark: checkboxGroup.dark ?? dark, className })}
         checked={checkboxGroup.values.some(checkedValue => checkedValue === props.value)}
         disabled={checkboxGroup.disabled ?? props.disabled}
         onChange={checkboxGroup.onChange ?? props.onChange}

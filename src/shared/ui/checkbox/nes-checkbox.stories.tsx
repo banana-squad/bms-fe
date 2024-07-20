@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import React, { useState } from 'react';
 
 const story = {
-  title: 'shared/ui/checkbox/NesCheckbox',
+  title: 'shared/ui/checkbox/nes-checkbox',
   component: NesCheckboxGroup,
   args: {
     name: 'nes-checkbox',
@@ -12,6 +12,7 @@ const story = {
     disabled: false,
     label: '',
     values: [],
+    onChange: () => {},
   },
   argTypes: {
     name: {

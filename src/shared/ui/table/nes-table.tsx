@@ -6,11 +6,12 @@ import { nesTableVariants } from '@/shared/ui/table/nes-table.css';
 type BaseTableProps = NesTableVariants & {
   headers: string[];
   data: string[][];
+  className?: string;
 };
 
-export const NesTable: FunctionComponent<BaseTableProps> = ({ headers, data, ...props }) => (
+export const NesTable: FunctionComponent<BaseTableProps> = ({ headers, data, className, bordered, dark, centered }) => (
   <div className="nes-table-responsive">
-    <table className={nesTableVariants(props)}>
+    <table className={nesTableVariants({ bordered, dark, centered, className })}>
       <thead>
         <tr>
           {headers.map((header, index) => (

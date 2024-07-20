@@ -3,7 +3,7 @@ import { NesTextarea } from '@/shared/ui/textarea/nes-textarea';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const story = {
-  title: 'shared/ui/textarea/NesTextarea',
+  title: 'shared/ui/textarea/nes-textarea',
   component: NesTextarea,
   args: {
     value: '',

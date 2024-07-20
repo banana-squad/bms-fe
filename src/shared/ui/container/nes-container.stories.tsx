@@ -2,7 +2,7 @@ import { NesContainer } from '@/shared/ui/container/nes-container';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const story = {
-  title: 'shared/ui/container/NesContainer',
+  title: 'shared/ui/container/nes-container',
   component: NesContainer,
   args: {
     dark: false,

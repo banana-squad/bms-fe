@@ -8,7 +8,7 @@ export type NesTextareaProps = Omit<TextareaHTMLAttributes<HTMLTextAreaElement>,
   onChange(value: string): void;
 };
 
-export const NesTextarea: FunctionComponent<NesTextareaProps> = ({ label, ...props }) => {
+export const NesTextarea: FunctionComponent<NesTextareaProps> = ({ label, className, ...props }) => {
   const sequence = useSequence();
   const id = props.id ?? sequence;
 
@@ -18,7 +18,7 @@ export const NesTextarea: FunctionComponent<NesTextareaProps> = ({ label, ...pro
       <textarea
         {...props}
         id={id}
-        className={nesTextareaVariants()}
+        className={nesTextareaVariants({ className })}
         onChange={(e) => props.onChange(e.target.value)}
       />
     </>

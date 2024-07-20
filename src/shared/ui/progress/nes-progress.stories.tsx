@@ -2,7 +2,7 @@ import { NesProgress } from '@/shared/ui/progress/nes-progress';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const story = {
-  title: 'shared/ui/progress/NesProgress',
+  title: 'shared/ui/progress/nes-progress',
   component: NesProgress,
   args: {
     value: 0,

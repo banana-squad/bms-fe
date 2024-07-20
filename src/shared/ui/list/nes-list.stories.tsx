@@ -4,7 +4,7 @@ import { NesListItem } from '@/shared/ui/list/nes-list-item';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const story = {
-  title: 'shared/ui/list/BaseList',
+  title: 'shared/ui/list/nes-list',
   component: NesList,
   args: {
     type: 'circle',
