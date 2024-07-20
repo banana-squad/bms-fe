@@ -5,24 +5,24 @@ import type { ChangeEventHandler, FunctionComponent, PropsWithChildren } from 'r
 export type NesCheckboxGroupProps = PropsWithChildren<NesCheckboxVariants & {
   label?: string;
   name?: string;
-  values: string[];
   disabled?: boolean;
-  onChange?(checkedValues?: string[]): void;
+  values: string[];
+  onChange(checkedValues?: string[]): void;
 }>;
 
-export const NesCheckboxGroup: FunctionComponent<NesCheckboxGroupProps> = ({ label, children, values, onChange, ...props }) => {
-  const handleChange: ChangeEventHandler<HTMLInputElement> = (e): void => {
+export const NesCheckboxGroup: FunctionComponent<NesCheckboxGroupProps> = ({ label, children, ...props }) => {
+  const onChange: ChangeEventHandler<HTMLInputElement> = e => {
     const { value, checked } = e.target;
 
-    onChange?.(checked
-      ? [...values, value]
-      : values.filter(checkedValue => checkedValue !== value));
+    props.onChange(checked
+      ? [...props.values, value]
+      : props.values.filter(checkedValue => checkedValue !== value));
   };
 
   return (
     <fieldset>
       {label && <legend>{label}</legend>}
-      <NesCheckboxContext.Provider value={{ handleChange, values, ...props }}>
+      <NesCheckboxContext.Provider value={{ ...props, onChange }}>
         {children}
       </NesCheckboxContext.Provider>
     </fieldset>
