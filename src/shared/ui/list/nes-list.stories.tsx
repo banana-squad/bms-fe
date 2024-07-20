@@ -3,7 +3,7 @@ import { NesListItem } from '@/shared/ui/list/nes-list-item';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const story = {
-  title: 'shared/list/BaseList',
+  title: 'shared/ui/list/BaseList',
   component: NesList,
 } satisfies Meta<typeof NesList>;
 
