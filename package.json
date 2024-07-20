@@ -13,8 +13,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@tanstack/react-form": "^0.26.4",
     "@tanstack/react-query": "^5.51.9",
     "@tanstack/react-router": "^1.45.6",
+    "@tanstack/zod-form-adapter": "^0.26.4",
     "axios": "^1.7.2",
     "lodash-es": "^4.17.21",
     "nes.css": "^2.3.0",
