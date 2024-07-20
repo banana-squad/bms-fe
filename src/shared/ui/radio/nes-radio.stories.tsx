@@ -1,18 +1,17 @@
 import { NesRadio } from '@/shared/ui/radio/nes-radio';
 import { NesRadioGroup } from '@/shared/ui/radio/nes-radio-group';
 import type { Meta, StoryObj } from '@storybook/react';
-import type { ChangeEvent } from 'react';
 import { useState } from 'react';
 
 const story = {
   title: 'shared/ui/radio/nes-radio',
   component: NesRadioGroup,
   render(args) {
-    const [value, setValue] = useState(() => args.value);
+    const [value, setValue] = useState<string>(args.value);
 
-    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-      setValue(e.target.value);
-      console.log('### handleChange', e.target.value);
+    const handleChange = (value: string) => {
+      setValue(value);
+      console.log('### handleChange', value);
     };
 
     return (
@@ -27,6 +26,7 @@ const story = {
     name: 'radio',
     dark: false,
     disabled: false,
+    onChange: ()=> {},
   },
   argTypes: {
     label: {

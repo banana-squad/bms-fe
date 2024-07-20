@@ -1,30 +1,24 @@
 import type { NesRadioVariants } from '@/shared/ui/radio/nes-button.css';
 import { nesRadioVariants } from '@/shared/ui/radio/nes-button.css';
 import { NesRadioContext } from '@/shared/ui/radio/nes-radio.context';
-import type { FunctionComponent, PropsWithChildren } from 'react';
+import type { FunctionComponent, InputHTMLAttributes, PropsWithChildren } from 'react';
 import { useContext } from 'react';
 
-export type NesRadioProps = NesRadioVariants & PropsWithChildren<{
-  value: string;
-  name?: string;
-  defaultChecked?: boolean;
-  disabled?: boolean;
-}>;
+export type NesRadioProps = PropsWithChildren<NesRadioVariants & Omit<InputHTMLAttributes<HTMLInputElement>, 'type'>>;
 
-export const NesRadio: FunctionComponent<NesRadioProps> = ({ children, dark, value, name, defaultChecked, disabled }) => {
+export const NesRadio: FunctionComponent<NesRadioProps> = ({ dark, children, ...props }) => {
   const radioGroup = useContext(NesRadioContext);
 
   return (
     <label>
       <input
+        {...props}
         type="radio"
-        name={radioGroup.name ?? name}
+        name={radioGroup.name ?? props.name}
         className={nesRadioVariants({ dark: radioGroup.dark ?? dark })}
-        defaultChecked={defaultChecked}
-        value={value}
-        checked={radioGroup.value !== undefined ? value === radioGroup.value : undefined}
-        disabled={radioGroup.disabled ?? disabled}
-        onChange={radioGroup.onChange}
+        checked={radioGroup.value !== undefined && props.value === radioGroup.value}
+        disabled={radioGroup.disabled ?? props.disabled}
+        onChange={radioGroup.onChange ?? props.onChange}
       />
       <span>{children}</span>
     </label>

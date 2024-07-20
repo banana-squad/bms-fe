@@ -1,4 +1,8 @@
 import type { NesRadioGroupProps } from '@/shared/ui/radio/nes-radio-group';
-import { createContext } from 'react';
+import { type ChangeEventHandler, createContext } from 'react';
 
-export const NesRadioContext = createContext<NesRadioGroupProps>(null!);
+export type NesRadioContextType = Omit<NesRadioGroupProps, 'onChange'> & {
+  onChange: ChangeEventHandler<HTMLInputElement>;
+};
+
+export const NesRadioContext = createContext<NesRadioContextType>(null!);
