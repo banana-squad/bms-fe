@@ -21,6 +21,8 @@ export const LoginForm: FunctionComponent<LoginFormProps> = () => {
     onSubmit: (values) => {
       console.log('### submit', values);
     },
+    asyncAlways: true,
+    asyncDebounceMs: 300,
     validatorAdapter: zodValidator(),
   });
 
@@ -39,7 +41,7 @@ export const LoginForm: FunctionComponent<LoginFormProps> = () => {
         </legend>
         <form.Field
           children={field => (
-            <NesInput name={field.name} value={field.state.value} onBlur={field.handleBlur} onChange={field.handleChange} placeholder="아이디" focus>
+            <NesInput name={field.name} value={field.state.value} onBlur={field.handleBlur} onChange={field.handleChange} placeholder="아이디">
               <NesFieldErrorText field={field} />
             </NesInput>
           )}

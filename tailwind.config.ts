@@ -6,6 +6,9 @@ export default {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      xs: '480px',
+    },
     extend: {
       colors: {
         'nes-dark': '#212529',
