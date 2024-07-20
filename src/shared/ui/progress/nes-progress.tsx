@@ -2,7 +2,7 @@ import type { NesProgressVariants } from '@/shared/ui/progress/nes-progress.css'
 import { nesProgressVariants } from '@/shared/ui/progress/nes-progress.css';
 import type { FunctionComponent } from 'react';
 
-type NesProgressProps = NesProgressVariants & {
+export type NesProgressProps = NesProgressVariants & {
   value: number;
   max?: number;
 };

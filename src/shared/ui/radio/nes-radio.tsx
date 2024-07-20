@@ -4,7 +4,7 @@ import { NesRadioContext } from '@/shared/ui/radio/nes-radio.context';
 import type { FunctionComponent, PropsWithChildren } from 'react';
 import { useContext } from 'react';
 
-type NesRadioProps = NesRadioVariants & PropsWithChildren<{
+export type NesRadioProps = NesRadioVariants & PropsWithChildren<{
   value: string;
   name?: string;
   defaultChecked?: boolean;

@@ -1,8 +1,6 @@
-import type { ReactNode } from 'react';
+import type { PropsWithChildren } from 'react';
 
-type NesListItemProps = {
-  children: ReactNode;
-};
+type NesListItemProps = PropsWithChildren;
 
 export function NesListItem({ children }: NesListItemProps) {
   return (

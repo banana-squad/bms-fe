@@ -1,4 +1,4 @@
-import ModalContainer from '@/shared/ui/modal/modal-container';
+import { ModalContainer } from '@/shared/ui/modal/modal-container';
 import { ModalContext } from '@/shared/ui/modal/modal.context';
 import { ModalController } from '@/shared/ui/modal/modal.controller';
 import type { PropsWithChildren } from 'react';

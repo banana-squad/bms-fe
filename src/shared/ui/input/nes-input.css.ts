@@ -7,7 +7,10 @@ export const nesInputVariants = cva(['nes-input'], {
       success: 'is-success',
       warning: 'is-warning',
       error: 'is-error',
-      dark: 'is-dark',
+    },
+    dark: {
+      true: 'is-dark',
+      false: '',
     },
   },
 });
