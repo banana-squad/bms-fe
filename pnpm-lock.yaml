@@ -51,6 +51,9 @@ importers:
       '@storybook/blocks':
         specifier: ^8.2.0
         version: 8.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.2.0(@babel/preset-env@7.24.7(@babel/core@7.24.7)))
+      '@storybook/manager-api':
+        specifier: ^8.2.5
+        version: 8.2.5(storybook@8.2.0(@babel/preset-env@7.24.7(@babel/core@7.24.7)))
       '@storybook/react':
         specifier: ^8.2.0
         version: 8.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.2.0(@babel/preset-env@7.24.7(@babel/core@7.24.7)))(typescript@5.5.3)
@@ -60,6 +63,9 @@ importers:
       '@storybook/test':
         specifier: ^8.2.0
         version: 8.2.0(storybook@8.2.0(@babel/preset-env@7.24.7(@babel/core@7.24.7)))
+      '@storybook/theming':
+        specifier: ^8.2.5
+        version: 8.2.5(storybook@8.2.0(@babel/preset-env@7.24.7(@babel/core@7.24.7)))
       '@tanstack/react-query-devtools':
         specifier: ^5.51.9
         version: 5.51.9(@tanstack/react-query@5.51.9(react@18.3.1))(react@18.3.1)
@@ -1281,6 +1287,11 @@ packages:
     peerDependencies:
       storybook: ^8.2.0
 
+  '@storybook/manager-api@8.2.5':
+    resolution: {integrity: sha512-4UHRlpcbYF2UiO9tonafnJMC2wJXWjTXivHjuf3ehbJXmopkNe/4zLtNTRyf3Hozf4CuYtNotw0tXflBrGlIlw==}
+    peerDependencies:
+      storybook: ^8.2.5
+
   '@storybook/react-dom-shim@8.2.0':
     resolution: {integrity: sha512-5x0+47iFlA6S9kVt46bWXtQfcY1BKOIDQ9FVo0OnVSxz9TWDVjc9WkhJQ7mx98+eYqqDwsGKXU9+zfIe2OjrXA==}
     peerDependencies:
@@ -1313,6 +1324,11 @@ packages:
     resolution: {integrity: sha512-BJa1iPNODG25QnNHDL0BTkZmYHdDcqG+hifRI36jdwmKIoL2+6Ei75q5lIDBxNzUSkd+g7yX+0KXaylBW6tFPw==}
     peerDependencies:
       storybook: ^8.2.0
+
+  '@storybook/theming@8.2.5':
+    resolution: {integrity: sha512-EEOSmW55MeLB3iskf5uUqffsqu003tTta8XQ1Xg8em3gePxPsjqzQtly1Ws5PtRg1Zvt1Zc6NKHwabiVzxothA==}
+    peerDependencies:
+      storybook: ^8.2.5
 
   '@swc/core-darwin-arm64@1.6.13':
     resolution: {integrity: sha512-SOF4buAis72K22BGJ3N8y88mLNfxLNprTuJUpzikyMGrvkuBFNcxYtMhmomO0XHsgLDzOJ+hWzcgjRNzjMsUcQ==}
@@ -5561,6 +5577,10 @@ snapshots:
       storybook: 8.2.0(@babel/preset-env@7.24.7(@babel/core@7.24.7))
       util: 0.12.5
 
+  '@storybook/manager-api@8.2.5(storybook@8.2.0(@babel/preset-env@7.24.7(@babel/core@7.24.7)))':
+    dependencies:
+      storybook: 8.2.0(@babel/preset-env@7.24.7(@babel/core@7.24.7))
+
   '@storybook/react-dom-shim@8.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.2.0(@babel/preset-env@7.24.7(@babel/core@7.24.7)))':
     dependencies:
       react: 18.3.1
@@ -5631,6 +5651,10 @@ snapshots:
       - '@types/jest'
       - jest
       - vitest
+
+  '@storybook/theming@8.2.5(storybook@8.2.0(@babel/preset-env@7.24.7(@babel/core@7.24.7)))':
+    dependencies:
+      storybook: 8.2.0(@babel/preset-env@7.24.7(@babel/core@7.24.7))
 
   '@swc/core-darwin-arm64@1.6.13':
     optional: true

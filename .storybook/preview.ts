@@ -4,6 +4,7 @@ import 'nes.css/css/nes.min.css';
 import '../src/shared/styles/base.css';
 
 const preview: Preview = {
+  tags: ['autodocs'],
   parameters: {
     controls: {
       matchers: {
