@@ -2,7 +2,7 @@ import { NesIcon } from '@/shared/ui/icon/nes-icon';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const story = {
-  title: 'shared/ui/icon/NesIcon',
+  title: 'shared/ui/icon/nes-icon',
   component: NesIcon,
   args: {
     size: 'large',
