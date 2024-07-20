@@ -1,13 +1,8 @@
 import type { NesListVariants } from '@/shared/ui/list/nes-list.css';
 import { nesListVariants } from '@/shared/ui/list/nes-list.css';
-import type { FunctionComponent, ReactNode } from 'react';
+import type { FunctionComponent, PropsWithChildren } from 'react';
 
-export type NesListType = 'circle' | 'disc';
-
-export type NesListProps = NesListVariants & {
-  type?: NesListType;
-  children?: ReactNode;
-};
+export type NesListProps = PropsWithChildren<NesListVariants>;
 
 export const NesList: FunctionComponent<NesListProps> = ({ type = 'circle', children }) =>(
   <div className="lists">

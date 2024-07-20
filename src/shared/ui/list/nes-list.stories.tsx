@@ -1,3 +1,4 @@
+import type { NesListProps } from '@/shared/ui/list/nes-list';
 import { NesList } from '@/shared/ui/list/nes-list';
 import { NesListItem } from '@/shared/ui/list/nes-list-item';
 import type { Meta, StoryObj } from '@storybook/react';
@@ -5,6 +6,15 @@ import type { Meta, StoryObj } from '@storybook/react';
 const story = {
   title: 'shared/ui/list/BaseList',
   component: NesList,
+  args: {
+    type: 'circle',
+  },
+  argTypes: {
+    type: {
+      options: ['circle', 'disc'] as NesListProps['type'][],
+      control: { type: 'inline-radio' },
+    },
+  },
 } satisfies Meta<typeof NesList>;
 
 export default story;
