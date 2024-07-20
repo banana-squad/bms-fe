@@ -1,7 +1,7 @@
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
 
-export const baseButtonVariants = cva(['nes-btn'], {
+export const nesButtonVariants = cva(['nes-btn'], {
   variants: {
     variant: {
       primary: 'is-primary',
@@ -16,4 +16,4 @@ export const baseButtonVariants = cva(['nes-btn'], {
   },
 });
 
-export type BaseButtonVariants = VariantProps<typeof baseButtonVariants>;
+export type NesButtonVariants = VariantProps<typeof nesButtonVariants>;

@@ -1,4 +1,4 @@
-import type { BaseButtonProps } from '@/shared/ui/button/nes-button';
+import type { NesButtonProps } from '@/shared/ui/button/nes-button';
 import { NesButton } from '@/shared/ui/button/nes-button';
 import type { StoryObj } from '@storybook/react';
 
@@ -12,7 +12,7 @@ const story = {
   },
   argTypes: {
     variant: {
-      options: ['default', 'primary', 'success', 'warning', 'error'] as BaseButtonProps['variant'][],
+      options: ['default', 'primary', 'success', 'warning', 'error'] as NesButtonProps['variant'][],
       control: { type: 'inline-radio' },
     },
     disabled: {
