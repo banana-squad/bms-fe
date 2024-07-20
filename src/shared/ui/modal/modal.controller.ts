@@ -1,14 +1,14 @@
 import type { FunctionComponent, Dispatch, SetStateAction } from 'react';
 import { v4 as uuid } from 'uuid';
 
-export type ModalPromise<T> = {
+export type ModalPromise<T = unknown> = {
   resolve(value: T): void;
   reject(reason: unknown): void;
 };
 
 export type ModalState<T = unknown> = ModalPromise<T> & {
   id: string;
-  Component: FunctionComponent<ModalPromise<T> & object>;
+  Component: FunctionComponent<ModalPromise<T> & Record<string, any>>;
   props: Record<string, unknown>;
 };
 
