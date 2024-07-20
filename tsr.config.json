@@ -1,0 +1,6 @@
+{
+  "routesDirectory": "./src/pages",
+  "generatedRouteTree": "./src/shared/types/routeTree.gen.ts",
+  "routeFileIgnorePrefix": "-",
+  "quoteStyle": "single"
+}
