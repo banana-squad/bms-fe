@@ -25,20 +25,73 @@ type Story = StoryObj<typeof story>;
 export const CloseIcon: Story = {
   args: {
     type: 'close',
-    size: 'large',
   },
 };
 
 export const TrophyIcon: Story = {
   args: {
     type: 'trophy',
-    size: 'large',
   },
 };
 
 export const CoinIcon: Story = {
   args: {
     type: 'coin',
-    size: 'large',
+  },
+};
+
+export const NesIcon: Story = {
+  args: {
+    type: 'nes',
+  },
+};
+
+export const NesJpIcon: Story = {
+  args: {
+    type: 'nesJp',
+  },
+};
+
+export const SnesIcon: Story = {
+  args: {
+    type: 'snes',
+  },
+};
+
+export const SnesJpIcon: Story = {
+  args: {
+    type: 'snesJp',
+  },
+};
+
+export const OctocatIcon: Story = {
+  args: {
+    type: 'octocat',
+  },
+};
+
+export const SmartphoneIcon: Story = {
+  args: {
+    type: 'smartphone',
+  },
+};
+
+export const PhoneIcon: Story = {
+  args: {
+    type: 'phone',
+  },
+};
+
+export const MediumCloseIcon: Story = {
+  args: {
+    type: 'close',
+    size: 'medium',
+  },
+};
+
+export const SmallCloseIcon: Story = {
+  args: {
+    type: 'close',
+    size: 'small',
   },
 };
